@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f9f6f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #ffe4cc;
+  padding: 20px;
+}
+
+.nav-bar-items {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.nav-bar-items :hover {
+  color: #ffb347;
+}
+/* -------------------------------------------------------------------------- */
+/*                      ESTILOS DEL CARROUSEL DE IMAGENES                     */
+/* -------------------------------------------------------------------------- */
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           ESTILOS DEL LOGO DE WSP                          */
+/* -------------------------------------------------------------------------- */
+#wsp {
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  z-index: 100;
+  bottom: 40px;
+  right: 40px;
+}
