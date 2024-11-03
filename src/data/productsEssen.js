@@ -41,4 +41,32 @@ export const ProductsEssen = [
     promotion: [3, 6, 12, 18],
     image: "/src/assets/wafflera.jpg",
   },
+  {
+    id: 7,
+    name: "Sarten 24cm",
+    price: 1500,
+    promotion: [3, 6, 12, 18],
+    image: "/src/assets/Categories/Sartén 24CM CERÁMICA.jpg",
+  },
+  {
+    id: 8,
+    name: "Set Budineras",
+    price: 1500,
+    promotion: [3, 6, 12, 18],
+    image: "/src/assets/Categories/setdebudineras2.jpg",
+  },
+  {
+    id: 9,
+    name: "Jarro",
+    price: 1500,
+    promotion: [3, 6, 12, 18],
+    image: "/src/assets/Categories/Jarro Quick Cherry copy.jpg",
+  },
+  {
+    id: 10,
+    name: "Cacerola",
+    price: 1500,
+    promotion: [3, 6, 12, 18],
+    image: "/src/assets/Categories/cherrycacerolaconmango18cm copy.jpg",
+  },
 ];

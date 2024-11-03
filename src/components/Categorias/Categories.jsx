@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { CategoriesOfProducts } from "../../data/CategoriesOfProducts";
 import { Categoria } from "./Categoria";
 
@@ -16,7 +16,7 @@ export const Categories = () => {
           padding: 5,
         }}
       >
-        <h2>Categorias</h2>
+        <Typography sx={{ fontSize: 32 }}>Categorias</Typography>
         <Box
           sx={{
             display: "flex",

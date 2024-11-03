@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Card,
   CardActions,
@@ -19,7 +18,6 @@ export const ProductCard = ({ id, name, image, price }) => {
       />
       <CardContent>
         <Typography
-          className="para"
           gutterBottom
           variant="h5"
           component="div"
@@ -32,7 +30,6 @@ export const ProductCard = ({ id, name, image, price }) => {
           {name}
         </Typography>
         <Typography
-          className="para"
           gutterBottom
           variant="h5"
           component="div"
