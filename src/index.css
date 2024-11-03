@@ -66,3 +66,15 @@ body {
   bottom: 40px;
   right: 40px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map-name {
+  width: 600px;
+  height: 450px;
+  border: 1px solid black;
+}

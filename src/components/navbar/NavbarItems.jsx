@@ -18,17 +18,17 @@ export const NavbarItems = () => {
       />
       <ul className="nav-bar-items">
         <li>
-          <a href="#">Contacto</a>
+          <a href="contacto">Contacto</a>
         </li>
         <li>
-          <a href="#">Sobre nosotros</a>
+          <a href="sobre-nosotros">Sobre nosotros</a>
         </li>
 
         <li>
-          <a href="#">Productos</a>
+          <a href="productos">Productos</a>
         </li>
         <li>
-          <a href="#">Promociones</a>
+          <a href="promos">Promociones</a>
         </li>
       </ul>
       <ShoppingCart sx={{ cursor: "pointer", fontSize: 32 }} />
