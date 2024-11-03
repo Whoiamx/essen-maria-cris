@@ -4,7 +4,9 @@ import { NavbarItems } from "./NavbarItems";
 export const NavbarContainer = () => {
   return (
     <div className="navbar">
-      <img src="/src/assets/Logo.svg" />
+      <a href="/">
+        <img src="/src/assets/Logo.svg" />
+      </a>
       <NavbarItems />
     </div>
   );

@@ -31,7 +31,7 @@ export const NavbarItems = () => {
           <a href="#">Promociones</a>
         </li>
       </ul>
-      <ShoppingCart sx={{ fontSize: 32 }} />
+      <ShoppingCart sx={{ cursor: "pointer", fontSize: 32 }} />
     </>
   );
 };
