@@ -10,6 +10,14 @@ export const ProductRecommendedContainer = () => {
     filterProductsRecommended()
   );
 
+  const [productsInCartOffer, setProductsInCartOffer] = useState([]);
+
+  const handleProductsInCart = (product) => {
+    setProductsInCartOffer((prevProducts) => [...prevProducts, product]);
+  };
+
+  console.log(productsInCartOffer);
+
   return (
     <>
       <Box
@@ -39,6 +47,7 @@ export const ProductRecommendedContainer = () => {
               image={el.image}
               price={el.price}
               key={el.id}
+              handleProductsInCart={handleProductsInCart}
             />
           ))}
         </Box>

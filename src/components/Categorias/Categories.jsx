@@ -4,7 +4,7 @@ import { Categoria } from "./Categoria";
 
 export const Categories = () => {
   const categories = CategoriesOfProducts;
-  console.log(categories);
+
   return (
     <>
       <Box

@@ -1,10 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import { ProductsEssen } from "../../data/index";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
+import { Filters } from "../../ui/Filters";
 
 export const ProductContainerMain = ({ title }) => {
   const [products, setProducts] = useState(ProductsEssen);
+
+  const [productsInCart, setProductsInCart] = useState([]);
+
+  const handleProductsInCart = (product) => {
+    setProductsInCart((prevProducts) => [...prevProducts, product]);
+  };
+
+  console.log(productsInCart);
 
   return (
     <>
@@ -17,7 +26,11 @@ export const ProductContainerMain = ({ title }) => {
           padding: 5,
         }}
       >
-        <Typography sx={{ fontSize: 30 }}>Productos {title}</Typography>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+          <Typography sx={{ fontSize: 30 }}>Productos {title}</Typography>
+          <Filters />
+        </Box>
+
         <Box
           sx={{
             display: "flex",
@@ -35,6 +48,7 @@ export const ProductContainerMain = ({ title }) => {
               image={el.image}
               price={el.price}
               key={el.id}
+              handleProductsInCart={handleProductsInCart}
             />
           ))}
         </Box>

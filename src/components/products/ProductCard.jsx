@@ -6,8 +6,16 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
-export const ProductCard = ({ id, name, image, price }) => {
+export const ProductCard = ({
+  id,
+  name,
+  image,
+  price,
+  handleProductsInCart,
+  handleProductsInCartOffer,
+}) => {
   return (
     <Card key={id}>
       <CardMedia
@@ -41,10 +49,16 @@ export const ProductCard = ({ id, name, image, price }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="contained" sx={{ backgroundColor: "#771B1B" }}>
+        <Button
+          onClick={() => handleProductsInCart({ id, name, price, image })}
+          variant="contained"
+          sx={{ backgroundColor: "#771B1B" }}
+        >
           Agregar al carrito
         </Button>
-        <Button>Mas info</Button>
+        <Button>
+          <Link to={`/producto/${id}`}>Más info</Link>
+        </Button>
       </CardActions>
     </Card>
   );

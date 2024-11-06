@@ -78,3 +78,9 @@ form {
   height: 450px;
   border: 1px solid black;
 }
+
+.filters {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
