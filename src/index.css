@@ -95,3 +95,8 @@ form {
   border-radius: 10px;
   color: black;
 }
+
+.footer {
+  background-color: #ffe4cc;
+  padding: 4em;
+}

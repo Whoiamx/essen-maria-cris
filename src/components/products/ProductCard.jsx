@@ -14,7 +14,6 @@ export const ProductCard = ({
   image,
   price,
   handleProductsInCart,
-  handleProductsInCartOffer,
 }) => {
   return (
     <Card key={id}>

@@ -3,18 +3,15 @@ import { ProductsEssen } from "../../data/index";
 import { useState } from "react";
 import { ProductCard } from "./ProductCard";
 import { Filters } from "../../ui/Filters";
-import { ProductCart } from "./../cart/ProductCart";
+
+import { useSelector } from "react-redux";
 
 export const ProductContainerMain = ({ title }) => {
-  const [products, setProducts] = useState(ProductsEssen);
-
-  const [productsInCart, setProductsInCart] = useState([]);
+  const productsAll = useSelector((state) => state.products.products);
 
   const handleProductsInCart = (product) => {
     setProductsInCart((prevProducts) => [...prevProducts, product]);
   };
-
-  console.log(productsInCart);
 
   return (
     <>
@@ -42,7 +39,7 @@ export const ProductContainerMain = ({ title }) => {
             flexWrap: "wrap",
           }}
         >
-          {products.map((el) => (
+          {productsAll.map((el) => (
             <ProductCard
               id={el.id}
               name={el.name}
