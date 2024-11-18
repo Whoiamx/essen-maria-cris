@@ -1,8 +1,6 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { Input } from "@mui/material";
 import { useRef, useState } from "react";
-import { ProductCard } from "../products/ProductCard";
-import { ProductCart } from "./../cart/ProductCart";
 
 export const NavbarItems = () => {
   const [IsVisible, setIsVisible] = useState(true);

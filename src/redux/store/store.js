@@ -6,12 +6,14 @@ import storage from "redux-persist/lib/storage";
 import recommendedSlice from "../reducers/recommended/recommendedSlice";
 import categoriesSlice from "./../reducers/categories/categoriesSlice";
 import productsSlice from "../reducers/products/productsSlice";
+import cartSlice from "../reducers/cart/cartSlice";
 
 //Combinamos todos los reducers(slices)
 const reducers = combineReducers({
   recommended: recommendedSlice,
   categories: categoriesSlice,
   products: productsSlice,
+  cart: cartSlice,
 });
 
 //Se configura la persistencia del storage -- redux-persist

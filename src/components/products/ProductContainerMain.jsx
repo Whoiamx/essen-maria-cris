@@ -1,17 +1,13 @@
 import { Box, Typography } from "@mui/material";
-import { ProductsEssen } from "../../data/index";
 
 import { ProductCard } from "./ProductCard";
 import { Filters } from "../../ui/Filters";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { ADD_TO_CART } from "../../redux/reducers/cart/cartSlice";
 
 export const ProductContainerMain = ({ title }) => {
   const productsAll = useSelector((state) => state.products.products);
-
-  const handleProductsInCart = (product) => {
-    setProductsInCart((prevProducts) => [...prevProducts, product]);
-  };
 
   return (
     <>
@@ -46,7 +42,6 @@ export const ProductContainerMain = ({ title }) => {
               image={el.image}
               price={el.price}
               key={el.id}
-              handleProductsInCart={handleProductsInCart}
             />
           ))}
         </Box>

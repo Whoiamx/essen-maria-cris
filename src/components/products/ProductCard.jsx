@@ -7,14 +7,11 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import { ADD_TO_CART } from "../../redux/reducers/cart/cartSlice";
+import { useDispatch } from "react-redux";
 
-export const ProductCard = ({
-  id,
-  name,
-  image,
-  price,
-  handleProductsInCart,
-}) => {
+export const ProductCard = ({ id, name, image, price }) => {
+  const dispatch = useDispatch();
   return (
     <Card key={id}>
       <CardMedia
@@ -49,7 +46,7 @@ export const ProductCard = ({
       </CardContent>
       <CardActions>
         <Button
-          onClick={() => handleProductsInCart({ id, name, price, image })}
+          onClick={() => dispatch(ADD_TO_CART({ id, name, price, image }))}
           variant="contained"
           sx={{ backgroundColor: "#771B1B" }}
         >

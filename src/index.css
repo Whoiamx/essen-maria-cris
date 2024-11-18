@@ -85,17 +85,6 @@ form {
   font-size: 1.2em;
 }
 
-.carrito {
-  position: absolute;
-  top: 8%;
-  left: 95%;
-  background-color: white;
-  height: 500px;
-  width: 100px;
-  border-radius: 10px;
-  color: black;
-}
-
 .footer {
   background-color: #ffe4cc;
   padding: 4em;

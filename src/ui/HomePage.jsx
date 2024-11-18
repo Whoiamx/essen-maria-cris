@@ -1,3 +1,4 @@
+import { ProductCartContainer } from "../components/cart/ProductCartContainer";
 import { Categories } from "../components/Categorias/Categories";
 import { ProductRecommendedContainer } from "../components/products-recommended/ProductRecommendedContainer";
 import { ProductContainerMain } from "../components/products/ProductContainerMain";
@@ -15,6 +16,7 @@ export const HomePage = () => {
 
       <WhatsappIcon />
       <Footer />
+      <ProductCartContainer />
     </>
   );
 };
