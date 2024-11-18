@@ -31,9 +31,6 @@ export const cartSlice = createSlice({
             cart: [...state.cart, { ...newItem, quantity: 1 }],
           };
     },
-    decrement: (state) => {
-      state.cart -= 1;
-    },
     CLEAR_CART: (state) => {
       state = initialState.cart;
     },

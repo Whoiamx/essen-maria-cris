@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { ProductsEssen } from "../../data/index";
-import { useState } from "react";
+
 import { ProductCard } from "./ProductCard";
 import { Filters } from "../../ui/Filters";
 
