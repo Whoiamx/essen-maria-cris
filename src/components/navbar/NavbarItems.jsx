@@ -1,7 +1,13 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { Input } from "@mui/material";
+import { useRef, useState } from "react";
+import { ProductCard } from "../products/ProductCard";
+import { ProductCart } from "./../cart/ProductCart";
 
 export const NavbarItems = () => {
+  const [IsVisible, setIsVisible] = useState(true);
+  const shopCart = useRef();
+
   return (
     <>
       <Input
@@ -31,7 +37,8 @@ export const NavbarItems = () => {
           <a href="promos">Promociones</a>
         </li>
       </ul>
-      <ShoppingCart sx={{ cursor: "pointer", fontSize: 32 }} />
+
+      <ShoppingCart ref={shopCart} sx={{ cursor: "pointer", fontSize: 32 }} />
     </>
   );
 };

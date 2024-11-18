@@ -1,3 +1,3 @@
-export const ProductCart = () => {
-  return <div>ProductCart</div>;
+export const ProductCart = ({}) => {
+  return <div className="carrito"></div>;
 };

@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { ProductsEssen } from "../../data/index";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ProductCard } from "./ProductCard";
 import { Filters } from "../../ui/Filters";
+import { ProductCart } from "./../cart/ProductCart";
 
 export const ProductContainerMain = ({ title }) => {
   const [products, setProducts] = useState(ProductsEssen);
