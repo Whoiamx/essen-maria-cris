@@ -31,7 +31,7 @@ export const ProductCartContainer = () => {
       }}
     >
       {!isCartEmpty && (
-        <>
+        <Box>
           <ProductCartCard />
           <Typography>Total: ${total}</Typography>
           <Button>
@@ -43,7 +43,7 @@ export const ProductCartContainer = () => {
               Enviar
             </a>
           </Button>
-        </>
+        </Box>
       )}
       {isCartEmpty && <Typography>El carrito está vacío</Typography>}
     </Box>

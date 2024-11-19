@@ -137,3 +137,9 @@ form {
   color: #771b1b;
   font-weight: 600;
 }
+
+.rapidito {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}

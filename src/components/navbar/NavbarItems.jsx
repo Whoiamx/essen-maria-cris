@@ -6,6 +6,10 @@ export const NavbarItems = () => {
   const [IsVisible, setIsVisible] = useState(true);
   const shopCart = useRef();
 
+  const handleVisibleCart = () => {
+    setIsVisible((prevState) => !prevState);
+  };
+
   return (
     <>
       <Input
@@ -44,7 +48,13 @@ export const NavbarItems = () => {
         </li>
       </ul>
 
-      <ShoppingCart ref={shopCart} sx={{ cursor: "pointer", fontSize: 32 }} />
+      <ShoppingCart
+        ref={shopCart}
+        sx={{
+          cursor: "pointer",
+          fontSize: 32,
+        }}
+      />
     </>
   );
 };

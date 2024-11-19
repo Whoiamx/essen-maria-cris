@@ -1,4 +1,10 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 import { useSelector } from "react-redux";
 
 export const ProductCartCard = () => {
@@ -37,6 +43,7 @@ export const ProductCartCard = () => {
             >
               <b>$ {item.price * item.quantity} </b>
             </Typography>
+            <Button>Eliminar producto</Button>
           </CardContent>
         </Card>
       ))}
