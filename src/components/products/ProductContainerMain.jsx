@@ -21,7 +21,9 @@ export const ProductContainerMain = ({ title }) => {
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-          <Typography sx={{ fontSize: 30 }}>Productos {title}</Typography>
+          <Typography sx={{ fontSize: 30, color: "#771B1B", fontWeight: 800 }}>
+            Productos {title}
+          </Typography>
           <Filters />
         </Box>
 

@@ -88,4 +88,48 @@ form {
 .footer {
   background-color: #ffe4cc;
   padding: 4em;
+  display: flex;
+  justify-content: space-around;
+  gap: 12em;
+}
+
+.comprando {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  list-style: none;
+}
+
+.title-footer {
+  color: #771b1b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+}
+
+#btn-contact {
+  padding: 1.2em;
+  border-radius: 2em;
+  background-color: #771b1b;
+  color: white;
 }

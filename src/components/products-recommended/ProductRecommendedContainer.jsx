@@ -18,7 +18,9 @@ export const ProductRecommendedContainer = () => {
           padding: 5,
         }}
       >
-        <Typography sx={{ fontSize: 30 }}>Productos en oferta</Typography>
+        <Typography sx={{ fontSize: 30, color: "#771B1B", fontWeight: 800 }}>
+          Productos en oferta
+        </Typography>
         <Box
           sx={{
             display: "flex",

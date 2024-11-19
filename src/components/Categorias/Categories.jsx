@@ -16,7 +16,9 @@ export const Categories = () => {
           padding: 5,
         }}
       >
-        <Typography sx={{ fontSize: 32 }}>Categorias</Typography>
+        <Typography sx={{ fontSize: 30, color: "#771B1B", fontWeight: 800 }}>
+          Categorias
+        </Typography>
         <Box
           sx={{
             display: "flex",
