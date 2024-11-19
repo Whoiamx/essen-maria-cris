@@ -6,6 +6,8 @@ import {
   Typography,
 } from "@mui/material";
 import { useSelector } from "react-redux";
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export const ProductCartCard = () => {
   const carrito = useSelector((state) => state.cart.cart);
@@ -43,7 +45,10 @@ export const ProductCartCard = () => {
             >
               <b>$ {item.price * item.quantity} </b>
             </Typography>
-            <Button>Eliminar producto</Button>
+
+            <IconButton aria-label="delete" size="small">
+              <DeleteIcon />
+            </IconButton>
           </CardContent>
         </Card>
       ))}
