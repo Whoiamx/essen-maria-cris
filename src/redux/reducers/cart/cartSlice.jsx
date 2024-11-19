@@ -19,16 +19,23 @@ export const cartSlice = createSlice({
         state.cart.push({ ...newItem, quantity: 1 });
       }
     },
-  },
-  CLEAR_CART: (state) => {
-    return {
-      ...state,
-      cart: [],
-    };
+    CLEAR_CART: (state) => {
+      return {
+        ...state,
+        cart: [],
+      };
+    },
+    DELETE_ALL_ONE_ELEMENT: (state, action) => {
+      const itemIdToRemove = action.payload.id;
+      state.cart = state.cart.filter(
+        (product) => product.id !== itemIdToRemove
+      );
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { ADD_TO_CART, CLEAR_CART } = cartSlice.actions;
+export const { ADD_TO_CART, CLEAR_CART, DELETE_ALL_ONE_ELEMENT } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;
