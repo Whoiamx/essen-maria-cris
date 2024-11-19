@@ -10,6 +10,13 @@ export const productsSlice = createSlice({
   initialState: INITIAL_STATE,
   reducers: {
     getProducts: (state) => state,
+    getOneProduct: (state, action) => {
+      const productOne = state.products.find(
+        (item) => item.id === action.payload.id
+      );
+      console.log(productOne);
+      return productOne;
+    },
   },
 });
 

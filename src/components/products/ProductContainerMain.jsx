@@ -3,8 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { ProductCard } from "./ProductCard";
 import { Filters } from "../../ui/Filters";
 
-import { useDispatch, useSelector } from "react-redux";
-import { ADD_TO_CART } from "../../redux/reducers/cart/cartSlice";
+import { useSelector } from "react-redux";
 
 export const ProductContainerMain = ({ title }) => {
   const productsAll = useSelector((state) => state.products.products);
