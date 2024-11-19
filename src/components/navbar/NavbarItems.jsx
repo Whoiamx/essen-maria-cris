@@ -22,17 +22,25 @@ export const NavbarItems = () => {
       />
       <ul className="nav-bar-items">
         <li>
-          <a href="contacto">Contacto</a>
+          <a className="nav-item" href="contacto">
+            Contacto
+          </a>
         </li>
         <li>
-          <a href="sobre-nosotros">Sobre nosotros</a>
+          <a className="nav-item" href="sobre-nosotros">
+            Sobre nosotros
+          </a>
         </li>
 
         <li>
-          <a href="productos">Productos</a>
+          <a className="nav-item" href="productos">
+            Productos
+          </a>
         </li>
         <li>
-          <a href="promos">Promociones</a>
+          <a className="nav-item" href="promos">
+            Promociones
+          </a>
         </li>
       </ul>
 

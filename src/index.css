@@ -133,3 +133,7 @@ form {
   background-color: #771b1b;
   color: white;
 }
+.nav-item {
+  color: #771b1b;
+  font-weight: 600;
+}
