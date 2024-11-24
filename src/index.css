@@ -115,6 +115,11 @@ form {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.about-title {
+  color: #771b1b;
+  font-size: 2rem;
+  font-weight: 800;
+}
 
 .contact-us {
   display: flex;
@@ -159,4 +164,22 @@ form {
 .redes-icons {
   display: flex;
   gap: 2em;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 4em;
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+.about-section {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
 }

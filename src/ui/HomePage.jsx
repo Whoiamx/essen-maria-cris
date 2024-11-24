@@ -4,6 +4,7 @@ import { ProductRecommendedContainer } from "../components/products-recommended/
 import { ProductContainerMain } from "../components/products/ProductContainerMain";
 import { Carrousel } from "../ui/Carrousel";
 import { WhatsappIcon } from "../ui/WhatsappIcon";
+import { AboutMe } from "./AboutMe";
 import { Faqs } from "./Faqs";
 import { Footer } from "./Footer";
 
@@ -16,6 +17,7 @@ export const HomePage = () => {
       <ProductContainerMain title={"Destacados"} />
 
       <WhatsappIcon />
+      <AboutMe />
       <Faqs />
       <Footer />
       <ProductCartContainer />

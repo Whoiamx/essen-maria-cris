@@ -1,8 +1,4 @@
-import { ProductsEssen } from "../data";
-
 export const Filters = () => {
-  // const { filterProducts, setFilters } = useFilter();
-
   return (
     <>
       <div className="filters">

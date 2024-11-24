@@ -23,7 +23,6 @@ export const ProductContainerMain = ({ title }) => {
           <Typography sx={{ fontSize: 30, color: "#771B1B", fontWeight: 800 }}>
             Productos {title}
           </Typography>
-          <Filters />
         </Box>
 
         <Box
