@@ -86,11 +86,12 @@ form {
 
 .footer {
   background-color: #ffe4cc;
-  padding: 4em;
+  padding: 1em;
   display: flex;
   gap: 10em;
   align-items: center; /* Centra las secciones horizontalmente */
   gap: 2em; /* Espacio entre secciones, ajustable */
+  height: 12em;
 }
 
 .comprando {
@@ -98,9 +99,9 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 4em;
   color: #771b1b;
-  padding: 4em;
+  padding: 8em;
   background-color: #faf0e6;
 }
 
@@ -118,10 +119,12 @@ form {
 .contact-us {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 3em;
   text-align: center;
   width: 100%;
-  padding: 5em;
+  padding: 2em;
 }
 
 .social-media {
@@ -139,6 +142,8 @@ form {
   border-radius: 2em;
   background-color: #771b1b;
   color: white;
+  width: 50%;
+  text-align: center;
 }
 .nav-item {
   color: #771b1b;

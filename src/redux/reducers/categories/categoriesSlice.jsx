@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { CategoriesOfProducts } from "../../../data";
+import { CategoriesOfProducts, ProductsEssen } from "../../../data";
 
 const INITIAL_STATE = {
   categories: CategoriesOfProducts,
+  productsAll: ProductsEssen,
 };
 
 export const categoriesSlice = createSlice({

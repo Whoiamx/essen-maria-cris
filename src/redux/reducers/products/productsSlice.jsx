@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { ProductsEssen } from "../../../data";
 
 const INITIAL_STATE = {
-  products: ProductsEssen,
+  originalProducts: ProductsEssen, // Mantén los productos originales
+  products: ProductsEssen, // Productos actuales (modificables)
+  filterProducts: false,
 };
 
 export const productsSlice = createSlice({
@@ -10,15 +12,26 @@ export const productsSlice = createSlice({
   initialState: INITIAL_STATE,
   reducers: {
     getProducts: (state) => state,
-    getOneProduct: (state, action) => {
-      const productOne = state.products.find(
-        (item) => item.id === action.payload.id
+    getProductsByCategory: (state, action) => {
+      const itemByCategory = action.payload;
+
+      // Filtrar productos por categoría
+      const filteredProducts = state.originalProducts.filter(
+        (product) => product.category === itemByCategory
       );
-      console.log(productOne);
-      return productOne;
+
+      // Si no hay coincidencias, restablecer a los productos originales
+      state.products =
+        filteredProducts.length > 0 ? filteredProducts : state.originalProducts;
+    },
+    resetProducts: (state) => {
+      // Acción para restaurar productos originales manualmente si es necesario
+      state.products = state.originalProducts;
     },
   },
 });
 
-export const { getProducts } = productsSlice.actions;
+export const { getProducts, getProductsByCategory, resetProducts } =
+  productsSlice.actions;
+
 export default productsSlice.reducer;

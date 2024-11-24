@@ -16,7 +16,7 @@ export const Faqs = () => {
         >
           ¿Qué formas de pago aceptan?
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ padding: 3 }}>
           Aceptamos tarjetas de crédito y débito, transferencias bancarias, y
           algunos medios digitales como Mercado Pago. Ofrecemos promociones con
           tarjetas seleccionadas, ¡consultá nuestras ofertas vigentes!
@@ -31,7 +31,7 @@ export const Faqs = () => {
         >
           ¿Tienen cuotas sin interés?
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ padding: 3 }}>
           Sí, contamos con opciones de financiación en cuotas sin interés con
           tarjetas participantes. La disponibilidad y cantidad de cuotas
           dependen de las promociones vigentes.
@@ -46,7 +46,7 @@ export const Faqs = () => {
         >
           ¿Puedo comprar para revender?
         </AccordionSummary>
-        <AccordionDetails defaultExpanded>
+        <AccordionDetails sx={{ padding: 3 }}>
           ¡Claro! Si estás interesado en revender nuestras ollas, escribinos
           para recibir más información sobre precios mayoristas y beneficios
           exclusivos.
@@ -61,7 +61,7 @@ export const Faqs = () => {
         >
           ¿Qué garantía tienen las ollas Essen?
         </AccordionSummary>
-        <AccordionDetails defaultExpanded>
+        <AccordionDetails sx={{ padding: 3 }}>
           Todas nuestras ollas Essen cuentan con garantía oficial de 2 años. Si
           surge algún problema, podés contactarnos para coordinar la solución.
         </AccordionDetails>
