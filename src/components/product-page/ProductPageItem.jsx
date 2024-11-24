@@ -16,7 +16,6 @@ export const ProductPageItem = () => {
     state.products.products.find((item) => item.id === Number(id))
   );
 
-  console.log(productor);
   return (
     <Card sx={{ maxWidth: 800, minHeight: 500 }}>
       <CardMedia

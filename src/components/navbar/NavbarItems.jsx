@@ -1,11 +1,11 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { Input } from "@mui/material";
-import { useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleCart } from "../../redux/reducers/cart/cartSlice";
 
 export const NavbarItems = () => {
-  const [IsVisible, setIsVisible] = useState(false);
-  const shopCart = useRef();
-
+  const isVisible = useSelector((state) => state.cart.isVisible);
+  const dispatch = useDispatch();
   return (
     <>
       <Input
@@ -45,7 +45,7 @@ export const NavbarItems = () => {
       </ul>
 
       <ShoppingCart
-        ref={shopCart}
+        onClick={() => dispatch(toggleCart())}
         sx={{
           cursor: "pointer",
           fontSize: 32,

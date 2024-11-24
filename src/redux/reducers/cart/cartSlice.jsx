@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   cart: [],
+  IsVisible: false,
 };
 
 export const cartSlice = createSlice({
@@ -31,11 +32,16 @@ export const cartSlice = createSlice({
         (product) => product.id !== itemIdToRemove
       );
     },
+    toggleCart: (state) => {
+      if (state.cart.length > 0) {
+        state.isVisible = !state.isVisible;
+      }
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { ADD_TO_CART, CLEAR_CART, DELETE_ALL_ONE_ELEMENT } =
+export const { ADD_TO_CART, CLEAR_CART, DELETE_ALL_ONE_ELEMENT, toggleCart } =
   cartSlice.actions;
 
 export default cartSlice.reducer;
