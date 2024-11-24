@@ -52,7 +52,7 @@ export const ProductCard = ({ id, name, image, price }) => {
         >
           Agregar al carrito
         </Button>
-        <Button>
+        <Button variant="outlined" sx={{ color: "white" }}>
           <Link to={`/producto/${id}`}>Más info</Link>
         </Button>
       </CardActions>
