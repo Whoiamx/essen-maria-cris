@@ -143,3 +143,8 @@ form {
   flex-direction: column;
   gap: 2em;
 }
+
+.redes-icons {
+  display: flex;
+  gap: 2em;
+}

@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 
 export const ProductContainerMain = ({ title }) => {
   const productsAll = useSelector((state) => state.products.products);
+  console.log(productsAll);
 
   return (
     <>
@@ -36,15 +37,17 @@ export const ProductContainerMain = ({ title }) => {
             flexWrap: "wrap",
           }}
         >
-          {productsAll.map((el) => (
-            <ProductCard
-              id={el.id}
-              name={el.name}
-              image={el.image}
-              price={el.price}
-              key={el.id}
-            />
-          ))}
+          {productsAll
+            ? productsAll.map((el) => (
+                <ProductCard
+                  id={el.id}
+                  name={el.name}
+                  image={el.image}
+                  price={el.price}
+                  key={el.id}
+                />
+              ))
+            : ""}
         </Box>
       </Box>
     </>

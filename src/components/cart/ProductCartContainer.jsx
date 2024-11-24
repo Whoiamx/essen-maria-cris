@@ -33,12 +33,15 @@ export const ProductCartContainer = () => {
       {!isCartEmpty && (
         <Box>
           <ProductCartCard />
-          <Typography>Total: ${total}</Typography>
-          <Button>
+          <Typography sx={{ padding: 2, fontSize: 22 }}>
+            Total: ${total}
+          </Typography>
+          <Button sx={{ backgroundColor: "#771B1B", width: "100%" }}>
             <a
               href="https://wa.me/5491163099115"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "white" }}
             >
               Enviar
             </a>

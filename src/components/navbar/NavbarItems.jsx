@@ -3,12 +3,8 @@ import { Input } from "@mui/material";
 import { useRef, useState } from "react";
 
 export const NavbarItems = () => {
-  const [IsVisible, setIsVisible] = useState(true);
+  const [IsVisible, setIsVisible] = useState(false);
   const shopCart = useRef();
-
-  const handleVisibleCart = () => {
-    setIsVisible((prevState) => !prevState);
-  };
 
   return (
     <>
