@@ -95,14 +95,18 @@ form {
 
 .comprando {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2em;
   color: #771b1b;
+  padding: 4em;
+  background-color: #faf0e6;
 }
 
 .title-comprando {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .title-footer {
@@ -115,8 +119,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  text-align: center; /* Centra el contenido de texto e íconos */
-  width: 100%; /* Asegura que ocupen el mismo ancho que las demás secciones */
+  text-align: center;
+  width: 100%;
   padding: 5em;
 }
 
@@ -126,8 +130,8 @@ form {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  text-align: center; /* Centra el contenido de texto e íconos */
-  width: 100%; /* Asegura que ocupen el mismo ancho que las demás secciones */
+  text-align: center;
+  width: 100%;
 }
 
 #btn-contact {
