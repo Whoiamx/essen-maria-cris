@@ -8,7 +8,6 @@
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
-  color: black;
 }
 
 body {
@@ -89,22 +88,21 @@ form {
   background-color: #ffe4cc;
   padding: 4em;
   display: flex;
-  justify-content: space-around;
-  gap: 12em;
+  gap: 10em;
+  align-items: center; /* Centra las secciones horizontalmente */
+  gap: 2em; /* Espacio entre secciones, ajustable */
 }
 
 .comprando {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  text-align: center;
+  color: #771b1b;
 }
 
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  list-style: none;
+.title-comprando {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .title-footer {
@@ -116,15 +114,20 @@ form {
 .contact-us {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  text-align: center;
+  gap: 3em;
+  text-align: center; /* Centra el contenido de texto e íconos */
+  width: 100%; /* Asegura que ocupen el mismo ancho que las demás secciones */
+  padding: 5em;
 }
 
 .social-media {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
-  text-align: center;
+  text-align: center; /* Centra el contenido de texto e íconos */
+  width: 100%; /* Asegura que ocupen el mismo ancho que las demás secciones */
 }
 
 #btn-contact {
